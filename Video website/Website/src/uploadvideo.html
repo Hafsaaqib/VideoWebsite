@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+    <link rel="stylesheet" href="uploadvideo.css">
+    <link rel="stylesheet" href="carousel-slider.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Upload</h1>
+        <form action="videos.html" method="post" enctype="multipart/form-data" id="uploadForm">
+            <label for="videoInput" class="custom-file-upload">
+                <span>Choose Video</span>
+            </label>
+            <input type="file" name="videoInput" id="videoInput" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="selectedMediaContainer"></div>
+    </div>
+    <div class="carousel-item" id="uploadedVideoContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
